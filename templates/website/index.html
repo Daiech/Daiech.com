@@ -2,6 +2,14 @@
 {% block TITLE %}{{TITLE}}{% endblock %}
 
 {%block body%}
+            <div id="social" class="">
+                <div class="pull-left">
+                    <a href="https://twitter.com/Daiech" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @Daiech</a>
+                </div>
+                <div class="pull-right">
+                    <div class="fb-like" data-href="http://www.facebook.com/Daiech" data-send="false" data-layout="button_count" data-width="250" data-show-faces="false"></div>
+                </div>
+            </div>
 			<div id="logo_600" class="">
                 <img src="{{STATIC_PREFIX }}img/Daiech.png" alt="Daiech" class="" />
             </div>
@@ -44,4 +52,5 @@
 {% endblock%}
 
 {%block jslink%}
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 {%endblock%}

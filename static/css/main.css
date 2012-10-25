@@ -100,6 +100,12 @@ textarea {
 .b {
     border:solid thin gray;
 }
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
 body{
     background-color:  #ececec;
     /*background-position:center top;*/
@@ -167,6 +173,16 @@ body > footer a:hover{
 }
 .font-white{
     color: white;
+}
+#social{
+    left: 0;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
 }
 
 
