@@ -107,7 +107,7 @@ textarea {
     float: right;
 }
 body{
-    background-color:  #ececec;
+    /*background-color:  #ececec;*/
     /*background-position:center top;*/
 /*    background-repeat: no-repeat;*/
     margin-top: 20px;
@@ -136,7 +136,7 @@ body > footer a:hover{
 }
 #logo_600{
     margin: 0 auto;
-    width: 600px;
+    width: 500px;
 }
 #members{
 /*    min-height: 100px;*/
@@ -298,18 +298,21 @@ body > footer a:hover{
     #logo_600, #logo_600 > img{
         width: 500px;
     }
+    #social{width: 50%}
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
     #logo_600, #logo_600 > img{
         width: 300px;
     }
+    #social{width: 90%}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
     #logo_600, #logo_600 > img{
         width: 250px;
     }
+    #social{width: 90%}
 }
 /*==================================================*/
 /*                  Cierra Responsive               */                    

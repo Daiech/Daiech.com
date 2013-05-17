@@ -1,7 +1,7 @@
 $(document).on("ready",main);
 var integ = [
         {"nombre":"Lina","twitter":"https://twitter.com/LinaAguirreG","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=LinaAguirreG&size=bigger"},
-        {"nombre":"Jonathan","twitter":"https://twitter.com/JonathanMG7","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=JonathanMG7&size=bigger"},
+        // {"nombre":"Jonathan","twitter":"https://twitter.com/JonathanMG7","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=JonathanMG7&size=bigger"},
         {"nombre":"Edwin","twitter":"https://twitter.com/edwinfmesa","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=edwinfmesa&size=bigger"},
         {"nombre":"Ana Maria","twitter":"https://twitter.com/morenoanita123","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=morenoanita123&size=bigger"},
         {"nombre":"Mauricio","twitter":"https://twitter.com/MaoAiz","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=MaoAiz&size=bigger"}
