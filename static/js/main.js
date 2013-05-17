@@ -1,4 +1,4 @@
-$(document).on("ready",main);
+$(document).ready(main);
 var integ = [
         {"nombre":"Lina","twitter":"https://twitter.com/LinaAguirreG","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=LinaAguirreG&size=bigger"},
         // {"nombre":"Jonathan","twitter":"https://twitter.com/JonathanMG7","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=JonathanMG7&size=bigger"},
@@ -16,7 +16,6 @@ function fontWhite(){
     })
 }
 
-
 function showLateral(){
     $("#lateral").hover(function(){
         $(this).animate({
@@ -32,7 +31,6 @@ function showLateral(){
     }
 )
 }
-
 
 function generarOrder(){
     integ2=generarArreglo(integ.length)
@@ -63,14 +61,14 @@ function generarArreglo(n){
 }
 
 function aleatorio(inferior,superior){ 
-   	numPosibilidades = superior - inferior 
-   	aleat = Math.random() * numPosibilidades 
-   	aleat = Math.round(aleat) 
-   	return parseInt(inferior) + aleat 
+   	numPosibilidades = superior - inferior;
+   	aleat = Math.random() * numPosibilidades;
+   	aleat = Math.round(aleat);
+   	return parseInt(inferior) + aleat;
 }
 
 function main(){
-    generarOrder()
-    fontWhite()
-    showLateral()
+    generarOrder();
+    fontWhite();
+    showLateral();
 }
