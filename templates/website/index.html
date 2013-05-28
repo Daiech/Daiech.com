@@ -6,6 +6,9 @@
         <div class="pull-left">
             <a href="https://twitter.com/Daiech" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @Daiech</a>
         </div>
+        <div class="google-plus">
+            <!-- <div class="g-plus" data-href="https://plus.google.com/105011490885727678942" rel="author"></div> -->
+        </div>
         <div class="pull-right">
             <div class="fb-like" data-href="http://www.facebook.com/Daiech" data-send="false" data-layout="button_count" data-width="250" data-show-faces="false"></div>
         </div>
@@ -19,8 +22,9 @@
         <div id="contacto">
             <h6>Contacto:</h6>
             <p>Mail: <br /><a href="mailto:contacto@daiech.com" title="e-mail" target="_blank">contacto@daiech.com</a></p>
-            <p>Twitter: <br /><a href="https://www.twitter.com/daiech" title="@Daiech" target="_blank">@Daiech</a></p>
-            <p>Facebook: <br /><a href="https://www.facebook.com/daiech" title="Faiech" target="_blank">fb.com/Daiech</a></p>
+            <p>Twitter: <a href="https://www.twitter.com/daiech" title="@Daiech" target="_blank">@Daiech</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/daiech" title="Daiech" target="_blank">fb.com/Daiech</a></p>
+            <p>Google+: <a href="https://plus.google.com/105011490885727678942/" title="Daiech+"  rel="publisher" target="_blank">Daiech+</a></p>
         </div> 
         <div id="construction">
                 <span>n</span>
@@ -54,11 +58,13 @@
 {% endblock%}
 
 {%block js%}
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 {%endblock%}
 
 {%block style%}
 <style type="text/css">
 /*#logo_600, #logo_600 > img {width: 500px}*/
+.google-plus{width: 20px;position: relative;top: 10px;left: auto;right: auto;margin: 0 auto;}
 </style>
 {%endblock%}
