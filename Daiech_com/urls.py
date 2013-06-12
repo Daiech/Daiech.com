@@ -10,6 +10,8 @@ urlpatterns = patterns('',
     url(r'^update', 'github.views.update'),
     # url(r'^Daiech_com/', include('Daiech_com.foo.urls')),
 
+    url(r'^ads/(?P<id_ads>[-\w]+)$', 'ads.views.home'),
+
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
