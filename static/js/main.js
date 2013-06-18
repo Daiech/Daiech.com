@@ -1,10 +1,9 @@
 $(document).ready(main);
 var integ = [
-        {"nombre":"Lina","twitter":"https://twitter.com/LinaAguirreG","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=LinaAguirreG&size=bigger"},
-        // {"nombre":"Jonathan","twitter":"https://twitter.com/JonathanMG7","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=JonathanMG7&size=bigger"},
-        {"nombre":"Edwin","twitter":"https://twitter.com/edwinfmesa","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=edwinfmesa&size=bigger"},
-        {"nombre":"Ana Maria","twitter":"https://twitter.com/morenoanita123","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=morenoanita123&size=bigger"},
-        {"nombre":"Mauricio","twitter":"https://twitter.com/MaoAiz","tw-pic":"http://api.twitter.com/1/users/profile_image?screen_name=MaoAiz&size=bigger"}
+        {"nombre":"Lina","twitter":"https://twitter.com/LinaAguirreG","tw-pic":"https://si0.twimg.com/profile_images/1435962497/Imagen0725_bigger.jpg"},
+        {"nombre":"Edwin","twitter":"https://twitter.com/edwinfmesa","tw-pic":"https://si0.twimg.com/profile_images/2227607157/foto_portada_bigger.jpg"},
+        {"nombre":"Ana Maria","twitter":"https://twitter.com/morenoanita123","tw-pic":"https://si0.twimg.com/profile_images/1850492054/IMG_1009_bigger.JPG"},
+        {"nombre":"Mauricio","twitter":"https://twitter.com/MaoAiz","tw-pic":"https://si0.twimg.com/profile_images/1391659719/mao_bigger.jpg"}
     ];
 var integ2=[];
 
