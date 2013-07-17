@@ -110,11 +110,11 @@ body{
     /*background-color:  #ececec;*/
     /*background-position:center top;*/
 /*    background-repeat: no-repeat;*/
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 body > header,body > footer,#body{
     margin: 0 auto;
-    width: 70%;
+    /*width: 70%;*/
 }
 body > header{
     text-align: center;
@@ -132,11 +132,15 @@ body > footer a:hover{
     text-decoration: underline;
 }
 #body{
-    
+    background-image: url("/static/img/home.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 1287px;
 }
-#logo_600{
+#logo{
     margin: 0 auto;
-    width: 500px;
+    width: 100%;
+    height: 100%;
 }
 #members{
 /*    min-height: 100px;*/
@@ -200,8 +204,9 @@ body > footer a:hover{
     display: block;
     left: -220px;
     position: absolute;
-    top:200px;
+    top:70px;
     width:250px;
+    height: 180px;
 }
 #lateral:hover{
 /*    border-right: solid thin #000;
@@ -249,6 +254,7 @@ body > footer a:hover{
     text-align: center;
     /*    text-transform: uppercase;*/
     width: 30px;
+    margin-top: 5px;
 }
 /*#construction a{
     text-decoration: none;
@@ -286,33 +292,33 @@ body > footer a:hover{
 
 /* Large desktop */
 @media (min-width: 1200px) {
-    #logo_600, #img-logo{
-        width: 500px;
+    #logo, #img-logo{
+        /*width: 500px;*/
     }
 }
 @media (min-width: 980px) and (max-width: 1280px) {
-    #logo_600, #img-logo{
-        width: 500px;
+    #logo, #img-logo{
+        /*width: 500px;*/
     }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-    #logo_600, #img-logo{
+    #logo, #img-logo{
         width: 500px;
     }
     #social{width: 50%}
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-    #logo_600, #img-logo{
+    #logo, #img-logo{
         width: 300px;
     }
     #social{width: 90%}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    #logo_600, #img-logo{
+    #logo, #img-logo{
         width: 250px;
     }
     #social{width: 90%}
