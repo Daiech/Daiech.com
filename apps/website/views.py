@@ -4,7 +4,7 @@ from django.template import RequestContext
 
 
 def home(request):
-    ctx = {'title':"Bienvenido a Daiech"}
+    ctx = {'title': "Bienvenido a Daiech"}
     return render(request, 'website/index.html')
 
 

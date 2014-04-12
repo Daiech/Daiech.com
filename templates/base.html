@@ -22,7 +22,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body  data-spy="scroll" data-target=".navbar-daiech">
   {% if not DEBUG %}
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -34,6 +34,9 @@
     }(document, 'script', 'facebook-jssdk'));</script>
   {% endif %}
     <div class="container">
+        <nav id="daiech-navbar" class="navbar" role="navigation">
+          {% include "top_bar.html" %}
+        </nav>
         {% block body %}{% endblock %}
     </div>
     <footer class="">
