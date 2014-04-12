@@ -4,8 +4,8 @@ from django.template import RequestContext
 
 
 def home(request):
-    ctx = {'title': "Bienvenido a Daiech"}
-    return render(request, 'website/index.html')
+    title = "Bienvenido a Daiech"
+    return render(request, 'website/index.html', locals())
 
 
 def log_in(request):

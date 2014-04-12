@@ -71,3 +71,9 @@ function main(){
     fontWhite();
     showLateral();
 }
+
+function goToByScroll(element, callback){
+    $('html,body').animate({
+        scrollTop: $(element).offset().top - 100},
+        'slow', callback);
+}

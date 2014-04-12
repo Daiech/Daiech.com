@@ -1,15 +1,63 @@
 {% extends "base.html" %}
-{% block title %}ss{{ title }}{% endblock %}
+{% load i18n %}
+{% block title %}{{ title }}{% endblock %}
 
-{%block body%}
-    
+{%block content %}
+<div class="index">
+    <div id="home">
+        <div class="principal-text">
+            <p class="principal-title">{% trans 'ESPACIOS DIGITALES COLABORATIVOS' %}</p>
+            <p class="principal-description">{% trans 'Mejoramos la experiencia de trabajo a través de heeramientas digitales' %}</p>
+            <a href="#products" class="btn btn-default">{% trans 'VER PRODUCTOS' %}</a>
+        </div>
+    </div>
+    <div id="about">
+        <h3>{% trans 'ACERCA' %}</h3>
+        <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
+    </div>
+    <div id="team">
+        <h3>{% trans 'NUESTRO EQUIPO' %}</h3>
+        <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
+        <div class="team-pic"></div>
+    </div>
+    <div id="products">
+        <h3>{% trans 'PRODUCTOS' %}</h3>
+        <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
+        
+    </div>
+    <div id="services">
+        <h3>{% trans 'SERVICIOS' %}</h3>
+        <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
+        
+    </div>
+    <div id="contact">
+        
+    </div>
+</div>
 {% endblock%}
 
 {%block js%}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#daiech-menu ul.nav li a[href^='#']").on('click', function(e) {
+            e.preventDefault();
+            goToByScroll(this.hash, function (e) {});
+        });
+    });
+</script>
 {%endblock%}
 
 {%block style%}
     <style type="text/css">
-        
+        .index{text-align: center;}
+        #home{background-image: url("{{ STATIC_URL }}img/landing/p.png");background-repeat: no-repeat;background-position: center;height: 530px;width: 100%}
+        #home .principal-text{top: 25%;position: relative;width: 50%;margin: auto;}
+        #home .principal-text p.principal-title{font-size: 50px;color: white;}
+        #home .principal-text p.principal-description{font-size: 20px;color: white;}
+        #home .principal-text a.btn{font-weight: bold;padding: 25px 35px;border-radius: 40px;color: #3DA584;margin-top: 50px;}
+
+        /*team*/
+        #team{}
+        #team .team-pic{background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;background-position: center; height: 280px;width: 100%}
     </style>
 {%endblock%}
