@@ -8,9 +8,10 @@
 # THANKS
 
     <name>
-    ParqueSoftPereira
+    Twitter Bootstrap
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    jQuery
+    Django, Python
