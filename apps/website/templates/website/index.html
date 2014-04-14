@@ -8,7 +8,7 @@
         <div class="principal-text">
             <p class="principal-title">{% trans 'ESPACIOS DIGITALES COLABORATIVOS' %}</p>
             <p class="principal-description">{% trans 'Mejoramos la experiencia de trabajo a través de heeramientas digitales' %}</p>
-            <a href="#products" class="btn btn-default">{% trans 'VER PRODUCTOS' %}</a>
+            <a href="#projects" class="btn btn-default">{% trans 'VER PROYECTOS' %}</a>
         </div>
     </div>
     <div id="about">
@@ -20,17 +20,19 @@
         <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
         <div class="team-pic"></div>
     </div>
-    <div id="products">
-        <h3>{% trans 'PRODUCTOS' %}</h3>
-        <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
+    <div id="projects">
+        <h3>{% trans 'NUESTROS PROYECTOS' %}</h3>
+        <p>{% trans 'Algunos de nuestros proyectos' %}</p>
         
     </div>
-    <div id="services">
-        <h3>{% trans 'SERVICIOS' %}</h3>
+    <div id="values">
+        <h3>{% trans 'VALORES' %}</h3>
         <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
         
     </div>
     <div id="contact">
+        <h3>{% trans 'CONTACTO' %}</h3>
+        <div>asdf</div>
         
     </div>
 </div>
@@ -56,8 +58,9 @@
         #home .principal-text p.principal-description{font-size: 20px;color: white;}
         #home .principal-text a.btn{font-weight: bold;padding: 25px 35px;border-radius: 40px;color: #3DA584;margin-top: 50px;}
 
-        /*team*/
         #team{}
         #team .team-pic{background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;background-position: center; height: 280px;width: 100%}
+
+        #contact {background-color: black}
     </style>
 {%endblock%}
