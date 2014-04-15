@@ -3,3 +3,8 @@
 #daiech-navbar{margin-top: 20px;}
 .daiech-logo{margin: 0 auto;width: 170px;}
 .daiech-social{height: 39px;margin:15px auto;margin-bottom: 0;width: 180px;}
+.daiech-social a{display: inline-block;background-image: url("/static/img/daiech-social-active.png");width: 40px;height: 40px;}
+.daiech-social a.fb{background-position: 0 0;}
+.daiech-social a.tw{background-position: 136px 0;}
+.daiech-social a.gp{background-position: 88px 0;}
+.daiech-social a.yt{background-position: 42px 0;}
