@@ -4,7 +4,6 @@ from django.template import RequestContext
 
 
 def home(request):
-    title = "Bienvenido a Daiech"
     return render(request, 'website/index.html', locals())
 
 

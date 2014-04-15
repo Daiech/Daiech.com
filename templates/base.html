@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Daiech Official Web">
-    <title>{% block title %}{% endblock %} - Daiech</title>
+    <title>{% block title %}{% endblock %}</title>
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ STATIC_URL }}apple-touch-icon-57x57-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ STATIC_URL }}apple-touch-icon-114x114-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ STATIC_URL }}apple-touch-icon-72x72-precomposed.png" />
@@ -39,8 +39,9 @@
         </nav>
     </div>
     {% block content %}{% endblock %}
-    <footer class="">
-        <!-- <p>Daiech.com <script>var f = new Date();document.write(f.getFullYear());</script><br /><a title="Env&iacute;anos un correo para contactarnos" href="mailto:contacto@daiech.com">contacto@daiech.com</a></p> -->
+    <footer class="screen">
+        <div class="daiech-logo"><a href="/"><img src="{{ STATIC_URL }}img/daiech-logo.png"></a></div>
+        <div class="daiech-social"><img src="{{ STATIC_URL }}img/daiech-social-active.png"></div>
     </footer>
 
   {% if not DEBUG %}

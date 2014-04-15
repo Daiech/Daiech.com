@@ -1,39 +1,50 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% block title %}{{ title }}{% endblock %}
+{% block title %}Daiech{% endblock %}
 
 {%block content %}
 <div class="index">
     <div id="home">
         <div class="principal-text">
             <p class="principal-title">{% trans 'ESPACIOS DIGITALES COLABORATIVOS' %}</p>
-            <p class="principal-description">{% trans 'Mejoramos la experiencia de trabajo a través de heeramientas digitales' %}</p>
+            <p class="principal-description">{% trans 'Mejoramos la experiencia de trabajo a través de herramientas digitales' %}</p>
             <a href="#projects" class="btn btn-default">{% trans 'VER PROYECTOS' %}</a>
         </div>
     </div>
-    <div id="about">
+    <div id="about" class="screen">
         <h3>{% trans 'ACERCA' %}</h3>
-        <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
+        <p>{% trans 'Especializados en el desarrollo de software colaborativo facilitando el trabajo en conjunto para mejorar el rendimiento de cualquier equipo de trabajo' %}</p>
     </div>
-    <div id="team">
+    <div id="team" class="screen">
         <h3>{% trans 'NUESTRO EQUIPO' %}</h3>
-        <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
+        <p>{% trans 'Comprometido a brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
         <div class="team-pic"></div>
     </div>
-    <div id="projects">
+    <div id="projects" class="screen">
         <h3>{% trans 'NUESTROS PROYECTOS' %}</h3>
         <p>{% trans 'Algunos de nuestros proyectos' %}</p>
-        
+        <div class="projects-container">
+            <div class="projects-pic"></div>
+        </div>
     </div>
-    <div id="values">
+    <div id="values" class="screen">
         <h3>{% trans 'VALORES' %}</h3>
-        <p>{% trans 'Estamos comprometidos en brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
-        
+        <p>{% trans '¿Por qué elegir nuestas soluciones?' %}</p>
+        <div class="values-pic"></div>
     </div>
-    <div id="contact">
+    <div id="contact" class="screen">
         <h3>{% trans 'CONTACTO' %}</h3>
-        <div>asdf</div>
-        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4">
+                    <div class="address"><address>Cra 31 # 15-87<br>Barrio, San Luis<br>Pereira, Colombia<br></address></div>
+                </div>
+                <div class="col-xs-6 col-sm-4"><p>3216899</p></div>
+                <div class="col-xs-6 col-sm-4">
+                    <a href="mailto:contacto@daiech.com" title="Env&iacute;anos un correo para contactarnos">contacto@daiech.com</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock%}
@@ -52,15 +63,23 @@
 {%block style%}
     <style type="text/css">
         .index{text-align: center;}
+        .screen{padding: 50px 0;}
         #home{background-image: url("{{ STATIC_URL }}img/landing/p.png");background-repeat: no-repeat;background-position: center;height: 530px;width: 100%}
         #home .principal-text{top: 25%;position: relative;width: 50%;margin: auto;}
         #home .principal-text p.principal-title{font-size: 50px;color: white;}
         #home .principal-text p.principal-description{font-size: 20px;color: white;}
         #home .principal-text a.btn{font-weight: bold;padding: 25px 35px;border-radius: 40px;color: #3DA584;margin-top: 50px;}
-
-        #team{}
+        #about{}
+        #team{background-color: #e1e1e1}
         #team .team-pic{background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;background-position: center; height: 280px;width: 100%}
+        #projects {}
+        #projects .projects-container{background-image: url("{{ STATIC_URL }}img/landing/tablet.png");background-repeat: no-repeat;background-position: right; height: 570px;width: 100%}
+        #projects .projects-pic{background-image: url("{{ STATIC_URL }}img/landing/projects.png");background-repeat: no-repeat;background-position: left; height: 319px;width: 100%}
+        #values {background-color: #00aeaa;color: white;}
+        #values .values-pic{background-image: url("{{ STATIC_URL }}img/landing/values.png");background-repeat: no-repeat;background-position: center; height: 188px;width: 100%}
+        #contact .row{margin: 40px 0;}
+        #contact {background-color: #222222;color: white;}
+        #contact .address{text-align: left;margin: auto;width: 130px}
 
-        #contact {background-color: black}
     </style>
 {%endblock%}
