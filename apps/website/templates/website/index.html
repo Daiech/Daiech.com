@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% block title %}Daiech{% endblock %}
+{% block title %}Daiech - Desarrollo de software colaborativo{% endblock %}
 
 {%block content %}
 <div class="index">
     <div id="home">
         <div class="principal-text">
             <p class="principal-title">{% trans 'ESPACIOS DIGITALES COLABORATIVOS' %}</p>
-            <p class="principal-description">{% trans 'Mejoramos la experiencia de trabajo a través de herramientas digitales' %}</p>
+            <p class="principal-description">{% trans 'Nuestra mayor meta es mejorar la experiencia de trabajo a través de herramientas digitales' %}</p>
             <a href="#projects" class="btn btn-default">{% trans 'VER PROYECTOS' %}</a>
         </div>
     </div>
@@ -29,7 +29,7 @@
                 <div class="">
                   <img src="{{ STATIC_URL }}img/landing/phone.png" alt="{% trans 'Responsive web Design' %}">
                   <div class="caption">
-                    <h4>{% trans 'Responsive web Design' %}</h4>
+                    <h4>{% trans 'Diseño adaptable' %}</h4>
                     <p class="text-muted">{% trans 'Ajuste a cualquier dispositivo para lograr un mayor alcance de visibilidad y una mejor experiencia de usuario' %}</p>
                   </div>
                 </div>
@@ -52,10 +52,11 @@
         <script type="text/template" id="member-template">
         {% verbatim %}
             {% for u in members %}
-                <div class="daiech-member col-xs-6 col-md-3">
+                <div class="daiech-member col-sm-6 col-md-3">
                     <div class="member-pic {{ u.class }}"></div>
                     <h4>{{ u.name }}</h4>
-                    <span class="text-muted">{{ u.text }}</span>
+                    <span class="text-muted">{{ u.job }}</span>
+                    <span><img src="/static/img/daiech-social-active.png" ></span>
                 </div>
             {% endfor %}
         {% endverbatim %}
@@ -131,7 +132,8 @@
         #about .container-fluid{margin-top: 100px;margin-bottom: 80px;width: 70%;}
         #team{background-color: #e1e1e1}
         #team .member-team{margin-top:50px;width: 100%;text-align: center;}
-        #team .daiech-member h4{font-weight: bold;}
+        #team .daiech-member h4{font-weight: bold;text-transform:uppercase;}
+        #team .daiech-member .text-muted{color:#00aeaa;}
         #team .member-team > .row{width: 90%;margin: 0 auto;}
         #team .member-pic{height: 280px;margin: 0 auto;width: 280px;/*border:solid thin white;*/background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;}
         .maoaiz{background-position: -12px 0;}
