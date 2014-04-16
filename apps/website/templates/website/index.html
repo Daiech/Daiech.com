@@ -48,8 +48,23 @@
     </div>
     <div id="team" class="screen">
         <h2>{% trans 'NUESTRO EQUIPO' %}</h2>
-        <p class="description-text text-muted">{% trans 'Comprometido a brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
-        <div class="team-pic"></div>
+        <p class="description-text text-muted">{% trans 'Comprometidos a brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
+        <script type="text/template" id="member-template">
+        {% verbatim %}
+            {% for u in members %}
+                <div class="daiech-member col-xs-6 col-md-3">
+                    <div class="member-pic {{ u.class }}"></div>
+                    <h4>{{ u.name }}</h4>
+                    <span class="text-muted">{{ u.text }}</span>
+                </div>
+            {% endfor %}
+        {% endverbatim %}
+        </script>
+        <div class="container-fluid member-team">
+            <div class="row">
+                
+            </div>
+        </div>
     </div>
     <div id="projects" class="screen">
         <h2>{% trans 'NUESTROS PROYECTOS' %}</h2>
@@ -115,7 +130,14 @@
         #about{}
         #about .container-fluid{margin-top: 100px;margin-bottom: 80px;width: 70%;}
         #team{background-color: #e1e1e1}
-        #team .team-pic{background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;background-position: center; height: 280px;width: 100%}
+        #team .member-team{margin-top:50px;width: 100%;text-align: center;}
+        #team .daiech-member h4{font-weight: bold;}
+        #team .member-team > .row{width: 90%;margin: 0 auto;}
+        #team .member-pic{height: 280px;margin: 0 auto;width: 280px;/*border:solid thin white;*/background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;}
+        .maoaiz{background-position: -12px 0;}
+        .lina{background-position: -593px 0;}
+        .ana{background-position: -886px 0;}
+        .edwinfmesa{background-position: -304px 0;}
         #projects {}
         #projects .projects-container{background-image: url("{{ STATIC_URL }}img/landing/tablet.png");background-repeat: no-repeat;background-position: right; height: 570px;width: 100%}
         #projects .projects-pic{background-image: url("{{ STATIC_URL }}img/landing/projects.png");background-repeat: no-repeat;background-position: left; height: 319px;width: 100%}

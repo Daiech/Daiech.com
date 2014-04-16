@@ -1,6 +1,7 @@
 .b{border: solid thin #dadada;}
 .navbar-toggle .icon-bar{background-color: #888;}
 #daiech-navbar{margin-top: 20px;}
+#daiech-menu *{color:#222;font-weight: bold;}
 .daiech-logo{margin: 0 auto;width: 170px;}
 .daiech-social{height: 39px;margin:15px auto;margin-bottom: 0;width: 172px;}
 .daiech-social a{display: inline-block;background-image: url("/static/img/daiech-social-active.png");width: 40px;height: 40px;}
