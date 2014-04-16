@@ -12,28 +12,59 @@
         </div>
     </div>
     <div id="about" class="screen">
-        <h3>{% trans 'ACERCA' %}</h3>
-        <p>{% trans 'Especializados en el desarrollo de software colaborativo facilitando el trabajo en conjunto para mejorar el rendimiento de cualquier equipo de trabajo' %}</p>
+        <h2>{% trans 'ACERCA' %}</h2>
+        <p class="description-text text-muted">{% trans 'Especializados en el desarrollo de software colaborativo facilitando el trabajo en conjunto para mejorar el rendimiento de cualquier equipo de trabajo' %}</p>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="">
+                  <img src="{{ STATIC_URL }}img/landing/address.png" alt="{% trans 'Diseños agradables' %}">
+                  <div class="caption">
+                    <h4>{% trans 'Diseños agradables' %}</h4>
+                    <p class="text-muted">{% trans 'Plataformas amigables y funcionales para interactuar de la forma más fácil, cómoda e intuitiva' %}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="">
+                  <img src="{{ STATIC_URL }}img/landing/phone.png" alt="{% trans 'Responsive web Design' %}">
+                  <div class="caption">
+                    <h4>{% trans 'Responsive web Design' %}</h4>
+                    <p class="text-muted">{% trans 'Ajuste a cualquier dispositivo para lograr un mayor alcance de visibilidad y una mejor experiencia de usuario' %}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="">
+                  <img src="{{ STATIC_URL }}img/landing/email.png" alt="{% trans 'Herramientas de seguimiento' %}">
+                  <div class="caption">
+                    <h4>{% trans 'Herramientas de seguimiento' %}</h4>
+                    <p class="text-muted">{% trans 'Control de su equipo de trabajo a través de reportes estadísticos que te ayudarán a tomar decisiones' %}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
     <div id="team" class="screen">
-        <h3>{% trans 'NUESTRO EQUIPO' %}</h3>
-        <p>{% trans 'Comprometido a brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
+        <h2>{% trans 'NUESTRO EQUIPO' %}</h2>
+        <p class="description-text text-muted">{% trans 'Comprometido a brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
         <div class="team-pic"></div>
     </div>
     <div id="projects" class="screen">
-        <h3>{% trans 'NUESTROS PROYECTOS' %}</h3>
-        <p>{% trans 'Algunos de nuestros proyectos' %}</p>
+        <h2>{% trans 'NUESTROS PROYECTOS' %}</h2>
+        <p class="description-text text-muted">{% trans 'Algunos de nuestros proyectos' %}</p>
         <div class="projects-container">
             <div class="projects-pic"></div>
         </div>
     </div>
     <div id="values" class="screen">
-        <h3>{% trans 'VALORES' %}</h3>
-        <p>{% trans '¿Por qué elegir nuestas soluciones?' %}</p>
+        <h2>{% trans 'VALORES' %}</h2>
+        <p class="description-text">{% trans '¿Por qué elegir nuestas soluciones?' %}</p>
         <div class="values-pic"></div>
     </div>
     <div id="contact" class="screen">
-        <h3>{% trans 'CONTACTO' %}</h3>
+        <h2>{% trans 'CONTACTO' %}</h2>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-6 col-sm-4">
@@ -75,12 +106,14 @@
     <style type="text/css">
         .index{text-align: center;}
         .screen{padding: 50px 0;}
+        .description-text{font-size: 16px;margin: 0 auto;width: 50%;}
         #home{background-image: url("{{ STATIC_URL }}img/landing/p.png");background-repeat: no-repeat;background-position: center;height: 530px;width: 100%}
         #home .principal-text{top: 25%;position: relative;width: 50%;margin: auto;}
         #home .principal-text p.principal-title{font-size: 50px;color: white;}
         #home .principal-text p.principal-description{font-size: 20px;color: white;}
         #home .principal-text a.btn{font-weight: bold;padding: 25px 35px;border-radius: 40px;color: #00aeaa;margin-top: 50px;}
         #about{}
+        #about .container-fluid{margin-top: 100px;margin-bottom: 80px;width: 70%;}
         #team{background-color: #e1e1e1}
         #team .team-pic{background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;background-position: center; height: 280px;width: 100%}
         #projects {}
@@ -98,6 +131,7 @@
         #contact .contact-logo{float: left}
         @media screen and (max-width:1072px){
             #home .principal-text{width: 70%;}
+            #about .container-fluid{width: 90%}
         }
         @media screen and (max-width:768px){
             #home {height: 430px;}
@@ -105,9 +139,5 @@
             #home .principal-text p.principal-title{font-size: 42px;}
             #home .principal-text a.btn{margin-top: 30px;}
         }
-        /*@media screen and (max-width:768px){
-            #home {height: 430px;}
-            #home .principal-text{top: 12%;width: 90%;}
-        }*/
     </style>
 {%endblock%}
