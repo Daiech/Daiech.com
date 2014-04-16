@@ -79,7 +79,7 @@
         #home .principal-text{top: 25%;position: relative;width: 50%;margin: auto;}
         #home .principal-text p.principal-title{font-size: 50px;color: white;}
         #home .principal-text p.principal-description{font-size: 20px;color: white;}
-        #home .principal-text a.btn{font-weight: bold;padding: 25px 35px;border-radius: 40px;color: #3DA584;margin-top: 50px;}
+        #home .principal-text a.btn{font-weight: bold;padding: 25px 35px;border-radius: 40px;color: #00aeaa;margin-top: 50px;}
         #about{}
         #team{background-color: #e1e1e1}
         #team .team-pic{background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;background-position: center; height: 280px;width: 100%}
@@ -96,6 +96,18 @@
         #contact p.daiech-mail-text{margin: 12px 0 0 70px;}
         #contact a{color: white}
         #contact .contact-logo{float: left}
-
+        @media screen and (max-width:1072px){
+            #home .principal-text{width: 70%;}
+        }
+        @media screen and (max-width:768px){
+            #home {height: 430px;}
+            #home .principal-text{top: 12%;width: 90%;}
+            #home .principal-text p.principal-title{font-size: 42px;}
+            #home .principal-text a.btn{margin-top: 30px;}
+        }
+        /*@media screen and (max-width:768px){
+            #home {height: 430px;}
+            #home .principal-text{top: 12%;width: 90%;}
+        }*/
     </style>
 {%endblock%}
