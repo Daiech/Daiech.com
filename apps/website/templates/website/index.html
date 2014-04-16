@@ -37,11 +37,22 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-6 col-sm-4">
-                    <div class="address"><address>Cra 31 # 15-87<br>Barrio, San Luis<br>Pereira, Colombia<br></address></div>
+                    <div class="box row">
+                        <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/address.png"></span>
+                        <address>Cra 31 # 15-87<br>Barrio, San Luis<br>Pereira, Colombia<br></address>
+                    </div>
                 </div>
-                <div class="col-xs-6 col-sm-4"><p>3216899</p></div>
                 <div class="col-xs-6 col-sm-4">
-                    <a href="mailto:contacto@daiech.com" title="Env&iacute;anos un correo para contactarnos">contacto@daiech.com</a>
+                    <div class="box row daiech-phone">
+                        <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/phone.png"></span>
+                        <p>(036) 3216899 <br> (+57) 316 664 3721</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div class="box row daiech-mail">
+                        <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/email.png"></span>
+                        <p class="daiech-mail-text"><a href="mailto:contacto@daiech.com" title="Env&iacute;anos un correo para contactarnos">contacto@daiech.com</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,9 +88,14 @@
         #projects .projects-pic{background-image: url("{{ STATIC_URL }}img/landing/projects.png");background-repeat: no-repeat;background-position: left; height: 319px;width: 100%}
         #values {background-color: #00aeaa;color: white;}
         #values .values-pic{background-image: url("{{ STATIC_URL }}img/landing/values.png");background-repeat: no-repeat;background-position: center; height: 188px;width: 100%}
-        #contact .row{margin: 40px 0;}
+        .box{text-align: left;margin: auto;width: 180px}
         #contact {background-color: #222222;color: white;}
-        #contact .address{text-align: left;margin: auto;width: 130px}
+        #contact .container-fluid > .row{margin: 40px 0;}
+        #contact address{margin-left: 50px;}
+        #contact p{margin: 8px 0 0 50px;}
+        #contact p.daiech-mail-text{margin: 12px 0 0 70px;}
+        #contact a{color: white}
+        #contact .contact-logo{float: left}
 
     </style>
 {%endblock%}
