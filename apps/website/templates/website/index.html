@@ -16,7 +16,7 @@
         <p class="description-text text-muted">{% trans 'Especializados en el desarrollo de software colaborativo facilitando el trabajo en conjunto para mejorar el rendimiento de cualquier equipo de trabajo' %}</p>
         <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-md-4">
                 <div class="">
                   <img src="{{ STATIC_URL }}img/landing/address.png" alt="{% trans 'Diseños agradables' %}">
                   <div class="caption">
@@ -25,7 +25,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-md-4">
                 <div class="">
                   <img src="{{ STATIC_URL }}img/landing/phone.png" alt="{% trans 'Responsive web Design' %}">
                   <div class="caption">
@@ -34,7 +34,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+              <div class="col-sm-4 col-md-4">
                 <div class="">
                   <img src="{{ STATIC_URL }}img/landing/email.png" alt="{% trans 'Herramientas de seguimiento' %}">
                   <div class="caption">
@@ -49,18 +49,14 @@
     <div id="team" class="screen">
         <h2>{% trans 'NUESTRO EQUIPO' %}</h2>
         <p class="description-text text-muted">{% trans 'Comprometidos a brindar soluciones creativas y apropiadas a sus necesidades' %}</p>
-        <script type="text/template" id="member-template">
-        {% verbatim %}
-            {% for u in members %}
-                <div class="daiech-member col-sm-6 col-md-3">
-                    <div class="member-pic {{ u.class }}"></div>
+        <script type="text/template" id="member-template">{% verbatim %}{% for u in members %}
+                <div class="daiech-member col-sm-6 col-md-3 col-lg-3">
+                    <div class="member-pic"><div class="{{ u.class }}"></div></div>
                     <h4>{{ u.name }}</h4>
                     <span class="text-muted">{{ u.job }}</span>
-                    <span><img src="/static/img/daiech-social-active.png" ></span>
+                    <div><img src="/static/img/daiech-social-active.png" ></div>
                 </div>
-            {% endfor %}
-        {% endverbatim %}
-        </script>
+{% endfor %}{% endverbatim %}</script>
         <div class="container-fluid member-team">
             <div class="row">
                 
@@ -83,19 +79,19 @@
         <h2>{% trans 'CONTACTO' %}</h2>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-6 col-sm-4">
+                <div class="contact-item col-sm-4 col-md-4">
                     <div class="box row">
                         <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/address.png"></span>
                         <address>Cra 31 # 15-87<br>Barrio, San Luis<br>Pereira, Colombia<br></address>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4">
+                <div class="contact-item col-sm-4 col-md-4">
                     <div class="box row daiech-phone">
                         <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/phone.png"></span>
                         <p>(036) 3216899 <br> (+57) 316 664 3721</p>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4">
+                <div class="contact-item col-sm-4 col-md-4">
                     <div class="box row daiech-mail">
                         <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/email.png"></span>
                         <p class="daiech-mail-text"><a href="mailto:contacto@daiech.com" title="Env&iacute;anos un correo para contactarnos">contacto@daiech.com</a></p>
@@ -132,11 +128,13 @@
         #about .container-fluid{margin-top: 100px;margin-bottom: 80px;width: 70%;}
         #team{background-color: #e1e1e1}
         #team .member-team{margin-top:50px;width: 100%;text-align: center;}
+        /*#team .daiech-member{width: 290px !important;padding: 0 10px;}*/
         #team .daiech-member h4{font-weight: bold;text-transform:uppercase;}
         #team .daiech-member .text-muted{color:#00aeaa;}
-        #team .member-team > .row{width: 90%;margin: 0 auto;}
-        #team .member-pic{height: 280px;margin: 0 auto;width: 280px;/*border:solid thin white;*/background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;}
-        .maoaiz{background-position: -12px 0;}
+        #team .member-team > .row{width: 100%;margin: 0 auto;}
+        #team .member-pic{height: 280px;margin: 0 auto;width: 100%;/*background-size:contain;*//*background-position:center;*/}
+        #team .member-pic > div{background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;height: 100%;max-width: 268px;margin: 0 auto;}
+        .maoaiz{background-position: -12px 0;background-size: cover;}
         .lina{background-position: -593px 0;}
         .ana{background-position: -886px 0;}
         .edwinfmesa{background-position: -304px 0;}
@@ -153,6 +151,7 @@
         #contact p.daiech-mail-text{margin: 12px 0 0 70px;}
         #contact a{color: white}
         #contact .contact-logo{float: left}
+        #contact .contact-item{height: 70px}
         @media screen and (max-width:1072px){
             #home .principal-text{width: 70%;}
             #about .container-fluid{width: 90%}
@@ -162,6 +161,7 @@
             #home .principal-text{top: 12%;width: 90%;}
             #home .principal-text p.principal-title{font-size: 42px;}
             #home .principal-text a.btn{margin-top: 30px;}
+            /*#team .member-team > .row {width: 580px;}*/
         }
     </style>
 {%endblock%}
