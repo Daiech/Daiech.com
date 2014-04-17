@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ["www.daiech.com", "*.daiech.com", "localhost", "162.243.207.189
 
 # Application definition
 
-APPS = ["apps.website", "apps.github"]
+APPS = ["apps.website", "apps.github", "apps.ads"]
 
 INSTALLED_APPS = (
     'django.contrib.admin',
