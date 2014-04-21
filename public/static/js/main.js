@@ -42,7 +42,7 @@ function main(){
 
 function goToByScroll(element, callback){
     $('html,body').animate({
-        scrollTop: $(element).offset().top - 100},
+        scrollTop: $(element).offset().top - 10},
         'slow', callback);
 }
 $(document).ready(generarOrder);

@@ -128,7 +128,7 @@
 {%block js%}
 <script type="text/javascript">
     $(document).ready(function(){
-        $("#daiech-menu ul.nav li a[href^='#']").on('click', function(e) {
+        $("#daiech-menu ul.nav li a[href^='#'], a[href='#projects']").on('click', function(e) {
             e.preventDefault();
             goToByScroll(this.hash, function (e) {});
         });
@@ -137,13 +137,14 @@
 {%endblock%}
 
 {%block style%}
+    <link href='http://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab' rel='stylesheet' type='text/css'>
     <style type="text/css">
         .index{text-align: center;}
         .screen{padding: 50px 0;}
         .description-text{font-size: 16px;margin: 0 auto;width: 50%;}
         #home{background-image: url("{{ STATIC_URL }}img/landing/p.png");background-repeat: no-repeat;background-position: center;height: 530px;width: 100%}
         #home .principal-text{top: 25%;position: relative;width: 50%;margin: auto;}
-        #home .principal-text p.principal-title{font-size: 50px;color: white;}
+        #home .principal-text p.principal-title{font-size: 50px;color: white;font-family: 'Montserrat', 'sans-serif;'}
         #home .principal-text p.principal-description{font-size: 20px;color: white;}
         #home .principal-text a.btn{font-weight: bold;padding: 25px 35px;border-radius: 40px;color: #00aeaa;margin-top: 50px;}
         #about{}
