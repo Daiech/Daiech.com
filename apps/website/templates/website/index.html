@@ -55,8 +55,7 @@
                     <h4>{{ u.name }}</h4>
                     <span class="text-muted">{{ u.job }}</span>
                     <div><a href="{{ u.social.twitter.url }}">@{{ u.social.twitter.username }}</a></div>
-                </div>
-{% endfor %}{% endverbatim %}</script>
+                </div>{% endfor %}{% endverbatim %}</script>
         <div class="container-fluid member-team">
             <div class="row">
                 
@@ -95,7 +94,32 @@
     <div id="values" class="screen">
         <h2>{% trans 'VALORES' %}</h2>
         <p class="description-text">{% trans '¿Por qué elegir nuestas soluciones?' %}</p>
-        <div class="values-pic"></div>
+        <!-- <div class="values-pic"></div> -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="daiech-member col-sm-6 col-md-3 col-lg-3">
+                    <div class="values-pic"><div class="calendar"></div></div>
+                    <h4>{% trans 'Cumplimiento' %}</h4>
+                    <span class="">{% trans 'El tiempo es nuestro recurso más valioso, por eso nuestra mayor meta es cumplir con los objetivos' %}.</span>
+                </div>
+                <div class="daiech-member col-sm-6 col-md-3 col-lg-3">
+                    <div class="values-pic"><div class="engagement"></div></div>
+                    <h4>{% trans 'Compromiso' %}</h4>
+                    <span class="">{% trans 'Amamos lo que hacemos, por eso trabajamos con dedicación para superar las expectativas de nuestros clientes' %}.</span>
+                </div>
+                <div class="daiech-member col-sm-6 col-md-3 col-lg-3">
+                    <div class="values-pic"><div class="synergy"></div></div>
+                    <h4>{% trans 'Sinergia' %}</h4>
+                    <span class="">{% trans 'Somos un equipo totalmente comprometido con nuestro trabajo para cumplir nuestro sueños y ayudar a cumplir los de los demás' %}.</span>
+                </div>
+                <div class="daiech-member col-sm-6 col-md-3 col-lg-3">
+                    <div class="values-pic"><div class="passion"></div></div>
+                    <h4>{% trans 'Pasión' %}</h4>
+                    <span class="">{% blocktrans %}"Trabajar en equipo divide el trabajo y multiplica los resultados" Anónimo.<br>
+Nuestro objetivo es poder ser creativos, ágiles e innovadores al trabajar en conjunto{% endblocktrans %}.</span>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="contact" class="screen">
         <h2>{% trans 'CONTACTO' %}</h2>
@@ -173,7 +197,13 @@
         #projects .daiech-project .destaju{background-position: -31px -81px;}
         #projects .daiech-project .califiter{background-position: -42px -197px; height: 110px}
         #values {background-color: #00aeaa;color: white;}
-        #values .values-pic{background-image: url("{{ STATIC_URL }}img/landing/values.png");background-repeat: no-repeat;background-position: center; height: 188px;width: 100%}
+        /*#values .values-pic{background-image: url("{{ STATIC_URL }}img/landing/values.png");background-repeat: no-repeat;height: 188px;width: 100%}*/
+        #values .values-pic > div{background-image: url("{{ STATIC_URL }}img/landing/values.png");background-repeat: no-repeat;width: 130px;height: 166px;margin: auto;}
+        #values h4{text-transform:uppercase;}
+        #values .values-pic > div.calendar{background-position: -4px -9px}
+        #values .values-pic > div.engagement{background-position: -306px -9px}
+        #values .values-pic > div.synergy{background-position: -600px -10px;width: 165px;}
+        #values .values-pic > div.passion{background-position: -923px -14px;height: 166px;}
         .box{text-align: left;margin: auto;width: 180px}
         #contact {background-color: #222222;color: white;}
         #contact .container-fluid > .row{margin: 40px 0;}
