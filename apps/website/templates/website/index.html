@@ -13,7 +13,7 @@
     </div>
     <div id="about" class="screen">
         <h2>{% trans 'ACERCA' %}</h2>
-        <p class="description-text text-muted">{% trans 'Especializados en el desarrollo de software colaborativo facilitando el trabajo en conjunto para mejorar el rendimiento de cualquier equipo de trabajo' %}</p>
+        <p class="description-text text-muted">{% trans 'Nos especializammos en el desarrollo de software colaborativo que facilite el trabajo en conjunto para mejorar el rendimiento de cualquier equipo de trabajo' %}</p>
         <div class="container-fluid">
             <div class="row">
               <div class="col-sm-4 col-md-4">
@@ -70,22 +70,19 @@
                 <div class="row">
                     <div class="daiech-project col-xs-12 col-md-5">
                         <div class="project-pic actarium"></div>
-                        <h4>Actarium</h4>
                         <p class="text-muted">{% trans 'Plataforma digital para la gestión de Actas y Reuniones. Permite que los usuarios creen, compartan y aprueben las actas de sus reuniones en la nube.' %}<br>Pruébela en <a href="http://actarium.com/?ref=daiech.com">Actarium.com</a></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="daiech-project col-xs-12 col-md-5">
                         <div class="project-pic destaju"></div>
-                        <h4>Destaju</h4>
-                        <p class="text-muted">{% trans 'Plataforma para el control de pagos a destajo y coordinación de actividades de campo' %}</p>
+                        <p class="text-muted">{% trans 'Plataforma para el control de pagos a destajo y coordinación de actividades de campo. Ésta Permite supervisar las actividades de los empleados y llevar inventarios de insumos y equipos de la empresa.' %}</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="daiech-project col-xs-12 col-md-5">
                         <div class="project-pic califiter"></div>
-                        <h4>Califiter</h4>
-                        <p class="text-muted">{% trans 'Red social y comercial enfocada a calificaciones de productos de tiendas virtuales y fisicas' %}<br>Califiter es el resultado de la asociación entre <a href="https://twitter.com/Daiech">Daiech</a> y <a href="https://twitter.com/comerxion">Comerxión</a></p>
+                        <p class="text-muted">{% trans 'Red social y comercial enfocada a calificaciones de productos de tiendas virtuales y fisicas' %}.<br>Califiter es el resultado de la asociación entre <a href="https://twitter.com/Daiech">Daiech</a> y <a href="https://twitter.com/comerxion">Comerxión</a></p>
                     </div>
                 </div>
             </div>
@@ -151,79 +148,11 @@ Nuestro objetivo es poder ser creativos, ágiles e innovadores al trabajar en co
 
 {%block js%}
 <script type="text/javascript">
-    $(document).ready(function(){
-        $("#daiech-menu ul.nav li a[href^='#'], a[href='#projects']").on('click', function(e) {
-            e.preventDefault();
-            goToByScroll(this.hash, function (e) {});
-        });
-    });
 </script>
 {%endblock%}
 
 {%block style%}
-    <link href='http://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-        .index{text-align: center;}
-        .screen{padding: 50px 0;}
-        .description-text{font-size: 16px;margin: 0 auto;width: 50%;}
-        #home{background-image: url("{{ STATIC_URL }}img/landing/p.png");background-repeat: no-repeat;background-position: center;height: 530px;width: 100%}
-        #home .principal-text{top: 25%;position: relative;width: 50%;margin: auto;}
-        #home .principal-text p.principal-title{font-size: 50px;color: white;font-family: 'Montserrat', 'sans-serif;'}
-        #home .principal-text p.principal-description{font-size: 20px;color: white;}
-        #home .principal-text a.btn{font-weight: bold;padding: 25px 35px;border-radius: 40px;color: #00aeaa;margin-top: 50px;}
-        #about{}
-        .about-icons{background-image: url("{{ STATIC_URL }}img/landing/icons.jpg");height: 63px;margin: auto;width: 63px;}
-        #about .design {background-position: 0 0;}
-        #about .responsive {background-position: -63px 0;}
-        #about .tools {background-position: -123px 0;}
-        #about .container-fluid{margin-top: 100px;margin-bottom: 80px;width: 70%;}
-        #team{background-color: #e1e1e1}
-        #team .member-team{margin-top:50px;width: 100%;text-align: center;}
-        /*#team .daiech-member{width: 290px !important;padding: 0 10px;}*/
-        #team .daiech-member h4{font-weight: bold;text-transform:uppercase;}
-        #team .daiech-member .text-muted{color:#00aeaa;}
-        #team .member-team > .row{width: 100%;margin: 0 auto;}
-        #team .member-pic{height: 280px;margin: 0 auto;width: 100%;/*background-size:contain;*//*background-position:center;*/}
-        #team .member-pic > div{background-image: url("{{ STATIC_URL }}img/landing/team.png");background-repeat: no-repeat;height: 100%;max-width: 268px;margin: 0 auto;}
-        .maoaiz{background-position: -12px 0;background-size: cover;}
-        .lina{background-position: -593px 0;}
-        .ana{background-position: -886px 0;}
-        .edwinfmesa{background-position: -304px 0;}
-        #projects {}
-        #projects .projects-container{background-image: url("{{ STATIC_URL }}img/landing/tablet.png");background-repeat: no-repeat;background-position: right; height: 570px;width: 100%}
-        #projects .daiech-project {display: inline-block; text-align: left;margin-left: 100px;}
-        #projects .daiech-project .project-pic{background-image: url("{{ STATIC_URL }}img/landing/projects.png");background-repeat: no-repeat;height: 80px;width: 100%}
-        #projects .daiech-project .actarium{background-position: -36px 0;}
-        #projects .daiech-project .destaju{background-position: -31px -81px;}
-        #projects .daiech-project .califiter{background-position: -42px -197px; height: 110px}
-        #values {background-color: #00aeaa;color: white;}
-        /*#values .values-pic{background-image: url("{{ STATIC_URL }}img/landing/values.png");background-repeat: no-repeat;height: 188px;width: 100%}*/
-        #values .values-pic > div{background-image: url("{{ STATIC_URL }}img/landing/values.png");background-repeat: no-repeat;width: 130px;height: 166px;margin: auto;}
-        #values h4{text-transform:uppercase;}
-        #values .values-pic > div.calendar{background-position: -4px -9px}
-        #values .values-pic > div.engagement{background-position: -306px -9px}
-        #values .values-pic > div.synergy{background-position: -600px -10px;width: 165px;}
-        #values .values-pic > div.passion{background-position: -923px -14px;height: 166px;}
-        .box{text-align: left;margin: auto;width: 180px}
-        #contact {background-color: #222222;color: white;}
-        #contact .container-fluid > .row{margin: 40px 0;}
-        #contact address{margin-left: 50px;}
-        #contact p{margin: 8px 0 0 50px;}
-        #contact p.daiech-mail-text{margin: 12px 0 0 70px;}
-        #contact a{color: white}
-        #contact .contact-logo{float: left}
-        #contact .contact-item{height: 70px}
-        @media screen and (max-width:1072px){
-            #home .principal-text{width: 70%;}
-            #about .container-fluid{width: 90%}
-            #projects .daiech-project{margin-left: 0}
-        }
-        @media screen and (max-width:768px){
-            #home {height: 430px;}
-            #home .principal-text{top: 12%;width: 90%;}
-            #home .principal-text p.principal-title{font-size: 42px;}
-            #home .principal-text a.btn{margin-top: 30px;}
-            #projects .projects-container{background-image: none;}
-        }
-    </style>
+<link href='http://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab' rel='stylesheet' type='text/css'>
+<style type="text/css">
+</style>
 {%endblock%}

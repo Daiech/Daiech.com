@@ -6,7 +6,7 @@ var integ = [
     ];
 var integ2=[];
 
-function generarOrder(){
+function ordering(){
     integ2=generarArreglo(integ.length)
     members = {};
     for(i=0;i<integ.length;i++){
@@ -37,7 +37,11 @@ function aleatorio(inferior,superior){
 }
 
 function main(){
-    generarOrder();
+    ordering();
+    $("#daiech-menu ul.nav li a[href^='#'], a[href='#projects']").on('click', function(e) {
+        e.preventDefault();
+        goToByScroll(this.hash, function (e) {});
+    });
 }
 
 function goToByScroll(element, callback){
@@ -45,4 +49,4 @@ function goToByScroll(element, callback){
         scrollTop: $(element).offset().top - 10},
         'slow', callback);
 }
-$(document).ready(generarOrder);
+$(document).ready(main);

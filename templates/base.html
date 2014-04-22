@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="description" content="Daiech Official Web">
+    <meta name="description" content="{% trans 'Página Oficial de Daiech - Desarrollo de software colaborativo' %}">
     <title>{% block title %}{% endblock %}</title>
     <meta property="og:image" content="http://daiech.com/{{ STATIC_URL }}img/Daiech.png" />
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ STATIC_URL }}apple-touch-icon-57x57-precomposed.png" />
@@ -15,7 +15,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ STATIC_URL }}apple-touch-icon-144x144-precomposed.png" />
     <link rel="icon" type="image/x-icon" href="{{ STATIC_URL }}favicon.ico">
 
-    <!-- Bootstrap -->
     <link href="{{ STATIC_URL }}bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css">
     {% block style %}{% endblock %}
