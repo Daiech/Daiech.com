@@ -18,7 +18,7 @@
             <div class="row">
               <div class="col-sm-4 col-md-4">
                 <div class="">
-                  <img src="{{ STATIC_URL }}img/landing/address.png" alt="{% trans 'Diseños agradables' %}">
+                  <div class="about-icons design"></div>
                   <div class="caption">
                     <h4>{% trans 'Diseños agradables' %}</h4>
                     <p class="text-muted">{% trans 'Plataformas amigables y funcionales para interactuar de la forma más fácil, cómoda e intuitiva' %}</p>
@@ -27,7 +27,7 @@
               </div>
               <div class="col-sm-4 col-md-4">
                 <div class="">
-                  <img src="{{ STATIC_URL }}img/landing/phone.png" alt="{% trans 'Responsive web Design' %}">
+                  <div class="about-icons responsive"></div>
                   <div class="caption">
                     <h4>{% trans 'Diseño adaptable' %}</h4>
                     <p class="text-muted">{% trans 'Ajuste a cualquier dispositivo para lograr un mayor alcance de visibilidad y una mejor experiencia de usuario' %}</p>
@@ -36,7 +36,7 @@
               </div>
               <div class="col-sm-4 col-md-4">
                 <div class="">
-                  <img src="{{ STATIC_URL }}img/landing/email.png" alt="{% trans 'Herramientas de seguimiento' %}">
+                  <div class="about-icons tools"></div>
                   <div class="caption">
                     <h4>{% trans 'Herramientas de seguimiento' %}</h4>
                     <p class="text-muted">{% trans 'Control de su equipo de trabajo a través de reportes estadísticos que te ayudarán a tomar decisiones' %}</p>
@@ -54,7 +54,7 @@
                     <div class="member-pic"><div class="{{ u.class }}"></div></div>
                     <h4>{{ u.name }}</h4>
                     <span class="text-muted">{{ u.job }}</span>
-                    <div><img src="/static/img/daiech-social-active.png" ></div>
+                    <div><a href="{{ u.social.twitter.url }}">@{{ u.social.twitter.username }}</a></div>
                 </div>
 {% endfor %}{% endverbatim %}</script>
         <div class="container-fluid member-team">
@@ -148,6 +148,10 @@
         #home .principal-text p.principal-description{font-size: 20px;color: white;}
         #home .principal-text a.btn{font-weight: bold;padding: 25px 35px;border-radius: 40px;color: #00aeaa;margin-top: 50px;}
         #about{}
+        .about-icons{background-image: url("{{ STATIC_URL }}img/landing/icons.jpg");height: 63px;margin: auto;width: 63px;}
+        #about .design {background-position: 0 0;}
+        #about .responsive {background-position: -63px 0;}
+        #about .tools {background-position: -123px 0;}
         #about .container-fluid{margin-top: 100px;margin-bottom: 80px;width: 70%;}
         #team{background-color: #e1e1e1}
         #team .member-team{margin-top:50px;width: 100%;text-align: center;}

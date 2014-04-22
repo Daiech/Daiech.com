@@ -6,7 +6,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Montserrat', 'sans-serif;'}
 #daiech-navbar{margin-top: 20px;}
 #daiech-menu *{color:#222;font-weight: bold;font-family: 'Montserrat', 'sans-serif;'}
 .daiech-logo{margin: 0 auto;width: 170px;}
-.daiech-social{height: 39px;margin:15px auto;margin-bottom: 0;width: 172px;}
+.daiech-social{height: 39px;margin:15px auto;margin-bottom: 0;width: 16p0x;}
 .daiech-social a{display: inline-block;background-image: url("/static/img/daiech-social-active.png");width: 40px;height: 40px;}
 .daiech-social a.fb{background-position: 0 0;}
 .daiech-social a.tw{background-position: 136px 0;}

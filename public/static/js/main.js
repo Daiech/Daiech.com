@@ -1,8 +1,8 @@
 var integ = [
-        {"name":"Lina Marcela Aguirre", "class":"lina", "job": "Directora administrativa", "social": {"twitter": "https://twitter.com/LinaAguirreG"}},
-        {"name":"Edwin Fernando Mesa", "class":"edwinfmesa", "job": "Director de estrategias", "social": {"twitter": "https://twitter.com/edwinfmesa"}},
-        {"name":"Ana Maria Moreno", "class":"ana", "job": "Directora de arte y diseño", "social": {"twitter": "https://twitter.com/morenoanita123"}},
-        {"name":"José Mauricio Aizaga", "class":"maoaiz", "job": "Director de tecnología", "social": {"twitter": "https://twitter.com/MaoAiz"}}
+        {"name":"Lina Marcela Aguirre", "class":"lina", "job": "Directora administrativa", "social": {"twitter": {"url": "https://twitter.com/LinaAguirreG", "username": "LinaAguirreG"}}},
+        {"name":"Edwin Fernando Mesa", "class":"edwinfmesa", "job": "Director de estrategias", "social": {"twitter": {"url": "https://twitter.com/edwinfmesa", "username": "edwinfmesa"}}},
+        {"name":"Ana Maria Moreno", "class":"ana", "job": "Directora de arte y diseño", "social": {"twitter": {"url": "https://twitter.com/morenoanita123", "username": "morenoanita123"}}},
+        {"name":"José Mauricio Aizaga", "class":"maoaiz", "job": "Director de tecnología", "social": {"twitter": {"url": "https://twitter.com/MaoAiz", "username": "MaoAiz"}}}
     ];
 var integ2=[];
 
