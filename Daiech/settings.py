@@ -20,7 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'ia7rrg2xmrtrt#dh*zm5ea(b%1fsfghdgnaxa0zhiu(gf^r$u4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+try:
+    from .local_settings import DEBUG
+except ImportError:
+    DEBUG = True
 
 TEMPLATE_DEBUG = True
 

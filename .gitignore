@@ -2,7 +2,6 @@
 ## Eclipse
 #################
 *.pyc
-Daiech_com/settings.py
 .settings/
 *.pydevproject
 .project
@@ -168,3 +167,4 @@ stop.sh
 start.sh
 reload.sh
 *.log
+local_settings.py
