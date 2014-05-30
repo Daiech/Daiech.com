@@ -7,5 +7,9 @@ def home(request):
     return render(request, 'website/index.html', locals())
 
 
+def pitch(request):
+    return render(request, 'website/pitch.html', locals())
+
+
 def log_in(request):
     return render(request, 'website/login.html', {})
