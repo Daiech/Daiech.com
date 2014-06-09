@@ -119,8 +119,10 @@
     </div>
     <div id="partners" class="screen">
         <h2>{% trans 'ALIADOS' %}</h2>
-        <div class="parners-images">
+        <div class="partners-images">
             <a href="http://www.parquesoftpereira.com" target="_blank"><div id="parquesoft"></div></a>
+            <a href="http://www.comerxion.com" target="_blank"><div id="comerxion"></div></a>
+            <a href="http://www.del.com.co" target="_blank"><div id="del"></div></a>
         </div>
     </div>
     <div id="contact" class="screen">
@@ -136,7 +138,7 @@
                 <div class="contact-item col-sm-4 col-md-4">
                     <div class="box row daiech-phone">
                         <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/phone.png"></span>
-                        <p>(036) 3216899 <br> (+57) 316 664 3721</p>
+                        <p><!-- (036) 3216899 <br>  -->(+57) 316 664 3721</p>
                     </div>
                 </div>
                 <div class="contact-item col-sm-4 col-md-4">
@@ -159,7 +161,12 @@
 {%block style%}
 <link href='http://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab' rel='stylesheet' type='text/css'>
 <style type="text/css">
+    #partners .partners-images div{display: inline-block;margin-right: 15px !important;}
     #partners #parquesoft{background-image: url("/static/img/partners/parquesoft.png");height: 55px;margin: auto;margin-top: 30px;width: 185px;}
     #partners #parquesoft:hover{background-position: 2px 54px;}
+    #partners #comerxion{background-image: url("/static/img/partners/comerxion.png");height: 78px;margin: auto;margin-top: 30px;width: 138px;background-position: 0 93px;}
+    #partners #comerxion:hover{background-position: 0px 5px;}
+    #partners #del{background-image: url("/static/img/partners/del.png");height: 83px;margin: auto;margin-top: 30px;width: 138px;background-position: 0 94px;}
+    /*#partners #del:hover{background-position: 0px 0px;}*/
 </style>
 {%endblock%}

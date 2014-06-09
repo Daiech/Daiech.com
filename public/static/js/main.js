@@ -38,7 +38,7 @@ function aleatorio(inferior,superior){
 
 function main(){
     ordering();
-    $("#daiech-menu ul.nav li a[href^='#'], a[href='#projects']").on('click', function(e) {
+    $("#daiech-menu ul.nav li a[href^='/#'], a[href='#projects']").on('click', function(e) {
         e.preventDefault();
         goToByScroll(this.hash, function (e) {});
     });
