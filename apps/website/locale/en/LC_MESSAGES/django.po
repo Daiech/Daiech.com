@@ -2,98 +2,108 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-04 14:27-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-08-04 16:05-0500\n"
+"PO-Revision-Date: 2014-08-04 16:10-0500\n"
+"Last-Translator:   <contacto@daiech.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"X-Translated-Using: django-rosetta 0.7.4\n"
 
 #: templates/website/index.html:9
 msgid "ESPACIOS DIGITALES COLABORATIVOS"
-msgstr ""
+msgstr "Collaborative digital spaces"
 
 #: templates/website/index.html:10
 msgid ""
 "Nuestra mayor meta es mejorar la experiencia de trabajo a través de "
 "herramientas digitales"
-msgstr ""
+msgstr "Our main goal is to improve the work experience through digital tools"
 
 #: templates/website/index.html:11
 msgid "VER PROYECTOS"
-msgstr ""
+msgstr "SEE PROJECTS "
 
 #: templates/website/index.html:15
 msgid "ACERCA"
-msgstr ""
+msgstr "ABOUT"
 
 #: templates/website/index.html:16
 msgid ""
-"Nos especializammos en el desarrollo de software colaborativo que facilite "
-"el trabajo en conjunto para mejorar el rendimiento de cualquier equipo de "
+"Nos especializamos en el desarrollo de software colaborativo que facilite el"
+" trabajo en conjunto para mejorar el rendimiento de cualquier equipo de "
 "trabajo"
 msgstr ""
+"We specialize in developing collaborative software to facilitate  work "
+"together to improve the performance of any team"
 
 #: templates/website/index.html:23
 msgid "Diseños agradables"
-msgstr ""
+msgstr "Agreeable designs"
 
 #: templates/website/index.html:24
 msgid ""
 "Plataformas amigables y funcionales para interactuar de la forma más fácil, "
 "cómoda e intuitiva"
 msgstr ""
+"Friendly and functional platforms to interact in the most easy, convenient "
+"and intuitive way"
 
 #: templates/website/index.html:32
 msgid "Diseño adaptable"
-msgstr ""
+msgstr "Responsive web design"
 
 #: templates/website/index.html:33
 msgid ""
-"Ajuste a cualquier dispositivo para lograr un mayor alcance de visibilidad y "
-"una mejor experiencia de usuario"
+"Ajuste a cualquier dispositivo para lograr un mayor alcance de visibilidad y"
+" una mejor experiencia de usuario"
 msgstr ""
+"Adjust to any device for greater visibility and get a better user experience"
 
 #: templates/website/index.html:41
 msgid "Herramientas de seguimiento"
-msgstr ""
+msgstr "Monitoring tools"
 
 #: templates/website/index.html:42
 msgid ""
 "Control de su equipo de trabajo a través de reportes estadísticos que te "
 "ayudarán a tomar decisiones"
 msgstr ""
+"Control your team through statistical reports that help you make decisions"
 
 #: templates/website/index.html:50
 msgid "NUESTRO EQUIPO"
-msgstr ""
+msgstr "OUR TEAM"
 
 #: templates/website/index.html:51
 msgid ""
 "Comprometidos a brindar soluciones creativas y apropiadas a sus necesidades"
 msgstr ""
+"Committed to providing creative solutions and appropriate to their needs"
 
 #: templates/website/index.html:66
 msgid "NUESTROS PROYECTOS"
-msgstr ""
+msgstr "OUR PROJECTS"
 
 #: templates/website/index.html:67
 msgid "Algunos de nuestros proyectos"
-msgstr ""
+msgstr "Some of our projects"
 
 #: templates/website/index.html:73
 msgid ""
 "Plataforma digital para la gestión de Actas y Reuniones. Permite que los "
 "usuarios creen, compartan y aprueben las actas de sus reuniones en la nube."
 msgstr ""
+"Digital platform for managing records and meetings. Allows users to create, "
+"share and approve the minutes of its meetings in the cloud."
 
 #: templates/website/index.html:79
 msgid ""
@@ -101,82 +111,95 @@ msgid ""
 "de campo. Ésta Permite supervisar las actividades de los empleados y llevar "
 "inventarios de insumos y equipos de la empresa."
 msgstr ""
+"Platform for piecework payment control and coordination of field activities."
+" This allows you to monitor the activities of employees and take inventory "
+"of supplies and equipment company."
 
 #: templates/website/index.html:85
 msgid ""
 "Red social y comercial enfocada a calificaciones de productos de tiendas "
-"virtuales y fisicas"
+"virtuales y físicas"
 msgstr ""
+"Network social and commercial centered on product ratings in online stores "
+"and physical"
 
 #: templates/website/index.html:92
 msgid "VALORES"
-msgstr ""
+msgstr "CULTURE"
 
 #: templates/website/index.html:93
-msgid "¿Por qué elegir nuestas soluciones?"
-msgstr ""
+msgid "¿Por qué elegir nuestras soluciones?"
+msgstr "Why choose our solutions?"
 
 #: templates/website/index.html:99
 msgid "Cumplimiento"
-msgstr ""
+msgstr "Fulfillment"
 
 #: templates/website/index.html:100
 msgid ""
 "El tiempo es nuestro recurso más valioso, por eso nuestra mayor meta es "
 "cumplir con los objetivos"
 msgstr ""
+"Time is our most valuable resource, to our major goal is to meet the "
+"objectives"
 
 #: templates/website/index.html:104
 msgid "Compromiso"
-msgstr ""
+msgstr "Commitment"
 
 #: templates/website/index.html:105
 msgid ""
 "Amamos lo que hacemos, por eso trabajamos con dedicación para superar las "
 "expectativas de nuestros clientes"
 msgstr ""
+"We love what we do, so we work hard to exceed the expectations of our "
+"customers"
 
 #: templates/website/index.html:109
 msgid "Sinergia"
-msgstr ""
+msgstr "Synergy"
 
 #: templates/website/index.html:110
 msgid ""
 "Somos un equipo totalmente comprometido con nuestro trabajo para cumplir "
 "nuestro sueños y ayudar a cumplir los de los demás"
 msgstr ""
+"We are a team totally committed to our work to fulfill our dreams and help "
+"with the others"
 
 #: templates/website/index.html:114
 msgid "Pasión"
-msgstr ""
+msgstr "Passion"
 
 #: templates/website/index.html:115
 msgid ""
-"\"Trabajar en equipo divide el trabajo y multiplica los resultados\" Anónimo."
-"<br>Nuestro objetivo es poder ser creativos, ágiles e innovadores al "
-"trabajar en conjunto"
+"\"Trabajar en equipo divide el trabajo y multiplica los resultados\" "
+"Anónimo.<br>Nuestro objetivo es poder ser creativos, ágiles e innovadores al"
+" trabajar en conjunto"
 msgstr ""
+"\"Teamwork divides the work and multiply the results\" Anonymous. <br> Our "
+"goal is to be creatives, nimble and innovative to work together"
 
 #: templates/website/index.html:121
 msgid "ALIADOS"
-msgstr ""
+msgstr "ALLIES"
 
 #: templates/website/index.html:129
 msgid "CONTACTO"
-msgstr ""
+msgstr "CONTACT"
 
 #: templates/website/pitch.html:9
 msgid "Pitch Actarium"
-msgstr ""
+msgstr "Pitch Actarium"
 
 #: templates/website/pitch.html:10
 msgid "Video pitch de la empresa Daiech"
-msgstr ""
+msgstr "Video pitch Daiech company"
 
 #: templates/website/pitch.html:14
 msgid "Presentación Actarium"
-msgstr ""
+msgstr "Presentation Actarium"
 
 #: templates/website/pitch.html:15
 msgid "Video de presentación de la plataforma"
-msgstr ""
+msgstr "Video presentation of platform"
