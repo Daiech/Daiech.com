@@ -101,6 +101,7 @@ publish
 [Bb]in
 [Oo]bj
 sql
+*.sqlite3
 TestResults
 *.Cache
 ClientBin

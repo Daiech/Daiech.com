@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rosetta',
 ) + tuple(APPS)
 
 MIDDLEWARE_CLASSES = (
@@ -80,6 +81,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+LOGIN_URL = "/admin"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
