@@ -18,6 +18,10 @@ msgstr ""
 "Language: \n"
 "X-Translated-Using: django-rosetta 0.7.4\n"
 
+#: templates/website/base.html:10 templates/website/index.html:3
+msgid "Daiech - Desarrollo de software colaborativo"
+msgstr ""
+
 #: templates/website/index.html:9
 msgid "ESPACIOS DIGITALES COLABORATIVOS"
 msgstr "Collaborative digital spaces"
@@ -32,14 +36,14 @@ msgstr "Our main goal is to improve the work experience through digital tools"
 msgid "VER PROYECTOS"
 msgstr "SEE PROJECTS "
 
-#: templates/website/index.html:15
+#: templates/website/index.html:15 templates/website/top_bar.html:15
 msgid "ACERCA"
 msgstr "ABOUT"
 
 #: templates/website/index.html:16
 msgid ""
-"Nos especializamos en el desarrollo de software colaborativo que facilite el"
-" trabajo en conjunto para mejorar el rendimiento de cualquier equipo de "
+"Nos especializamos en el desarrollo de software colaborativo que facilite el "
+"trabajo en conjunto para mejorar el rendimiento de cualquier equipo de "
 "trabajo"
 msgstr ""
 "We specialize in developing collaborative software to facilitate  work "
@@ -123,7 +127,7 @@ msgstr ""
 "Network social and commercial centered on product ratings in online stores "
 "and physical"
 
-#: templates/website/index.html:92
+#: templates/website/index.html:92 templates/website/top_bar.html:18
 msgid "VALORES"
 msgstr "CULTURE"
 
@@ -184,7 +188,7 @@ msgstr ""
 msgid "ALIADOS"
 msgstr "ALLIES"
 
-#: templates/website/index.html:129
+#: templates/website/index.html:129 templates/website/top_bar.html:19
 msgid "CONTACTO"
 msgstr "CONTACT"
 
@@ -203,3 +207,15 @@ msgstr "Presentation Actarium"
 #: templates/website/pitch.html:15
 msgid "Video de presentación de la plataforma"
 msgstr "Video presentation of platform"
+
+#: templates/website/top_bar.html:14
+msgid "INICIO"
+msgstr ""
+
+#: templates/website/top_bar.html:16
+msgid "EQUIPO"
+msgstr ""
+
+#: templates/website/top_bar.html:17
+msgid "PROYECTOS"
+msgstr ""

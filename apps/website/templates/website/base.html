@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="description" content="{% trans 'Página Oficial de Daiech - Desarrollo de software colaborativo' %}">
+    <meta name="description" content="{% trans 'Daiech - Desarrollo de software colaborativo' %}">
     <meta name="p:domain_verify" content="ec1ecc0bbe961d2371873a3c66f3a70e"/>
     <title>{% block title %}{% endblock %}</title>
     <meta property="og:image" content="http://daiech.com/{{ STATIC_URL }}img/Daiech.png" />
@@ -38,7 +38,7 @@
   {% endif %}
     <div class="container">
         <nav id="daiech-navbar" class="navbar" role="navigation">
-          {% include "top_bar.html" %}
+          {% include "website/top_bar.html" %}
         </nav>
     </div>
     {% block content %}{% endblock %}
