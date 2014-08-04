@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-04 14:27-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/website/index.html:9
+msgid "ESPACIOS DIGITALES COLABORATIVOS"
+msgstr ""
+
+#: templates/website/index.html:10
+msgid ""
+"Nuestra mayor meta es mejorar la experiencia de trabajo a través de "
+"herramientas digitales"
+msgstr ""
+
+#: templates/website/index.html:11
+msgid "VER PROYECTOS"
+msgstr ""
+
+#: templates/website/index.html:15
+msgid "ACERCA"
+msgstr ""
+
+#: templates/website/index.html:16
+msgid ""
+"Nos especializammos en el desarrollo de software colaborativo que facilite "
+"el trabajo en conjunto para mejorar el rendimiento de cualquier equipo de "
+"trabajo"
+msgstr ""
+
+#: templates/website/index.html:23
+msgid "Diseños agradables"
+msgstr ""
+
+#: templates/website/index.html:24
+msgid ""
+"Plataformas amigables y funcionales para interactuar de la forma más fácil, "
+"cómoda e intuitiva"
+msgstr ""
+
+#: templates/website/index.html:32
+msgid "Diseño adaptable"
+msgstr ""
+
+#: templates/website/index.html:33
+msgid ""
+"Ajuste a cualquier dispositivo para lograr un mayor alcance de visibilidad y "
+"una mejor experiencia de usuario"
+msgstr ""
+
+#: templates/website/index.html:41
+msgid "Herramientas de seguimiento"
+msgstr ""
+
+#: templates/website/index.html:42
+msgid ""
+"Control de su equipo de trabajo a través de reportes estadísticos que te "
+"ayudarán a tomar decisiones"
+msgstr ""
+
+#: templates/website/index.html:50
+msgid "NUESTRO EQUIPO"
+msgstr ""
+
+#: templates/website/index.html:51
+msgid ""
+"Comprometidos a brindar soluciones creativas y apropiadas a sus necesidades"
+msgstr ""
+
+#: templates/website/index.html:66
+msgid "NUESTROS PROYECTOS"
+msgstr ""
+
+#: templates/website/index.html:67
+msgid "Algunos de nuestros proyectos"
+msgstr ""
+
+#: templates/website/index.html:73
+msgid ""
+"Plataforma digital para la gestión de Actas y Reuniones. Permite que los "
+"usuarios creen, compartan y aprueben las actas de sus reuniones en la nube."
+msgstr ""
+
+#: templates/website/index.html:79
+msgid ""
+"Plataforma para el control de pagos a destajo y coordinación de actividades "
+"de campo. Ésta Permite supervisar las actividades de los empleados y llevar "
+"inventarios de insumos y equipos de la empresa."
+msgstr ""
+
+#: templates/website/index.html:85
+msgid ""
+"Red social y comercial enfocada a calificaciones de productos de tiendas "
+"virtuales y fisicas"
+msgstr ""
+
+#: templates/website/index.html:92
+msgid "VALORES"
+msgstr ""
+
+#: templates/website/index.html:93
+msgid "¿Por qué elegir nuestas soluciones?"
+msgstr ""
+
+#: templates/website/index.html:99
+msgid "Cumplimiento"
+msgstr ""
+
+#: templates/website/index.html:100
+msgid ""
+"El tiempo es nuestro recurso más valioso, por eso nuestra mayor meta es "
+"cumplir con los objetivos"
+msgstr ""
+
+#: templates/website/index.html:104
+msgid "Compromiso"
+msgstr ""
+
+#: templates/website/index.html:105
+msgid ""
+"Amamos lo que hacemos, por eso trabajamos con dedicación para superar las "
+"expectativas de nuestros clientes"
+msgstr ""
+
+#: templates/website/index.html:109
+msgid "Sinergia"
+msgstr ""
+
+#: templates/website/index.html:110
+msgid ""
+"Somos un equipo totalmente comprometido con nuestro trabajo para cumplir "
+"nuestro sueños y ayudar a cumplir los de los demás"
+msgstr ""
+
+#: templates/website/index.html:114
+msgid "Pasión"
+msgstr ""
+
+#: templates/website/index.html:115
+msgid ""
+"\"Trabajar en equipo divide el trabajo y multiplica los resultados\" Anónimo."
+"<br>Nuestro objetivo es poder ser creativos, ágiles e innovadores al "
+"trabajar en conjunto"
+msgstr ""
+
+#: templates/website/index.html:121
+msgid "ALIADOS"
+msgstr ""
+
+#: templates/website/index.html:129
+msgid "CONTACTO"
+msgstr ""
+
+#: templates/website/pitch.html:9
+msgid "Pitch Actarium"
+msgstr ""
+
+#: templates/website/pitch.html:10
+msgid "Video pitch de la empresa Daiech"
+msgstr ""
+
+#: templates/website/pitch.html:14
+msgid "Presentación Actarium"
+msgstr ""
+
+#: templates/website/pitch.html:15
+msgid "Video de presentación de la plataforma"
+msgstr ""
