@@ -25,9 +25,9 @@ try:
 except ImportError:
     DEBUG = True
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ["www.daiech.com", "*.daiech.com", "localhost", "162.243.207.189"]
+ALLOWED_HOSTS = [".daiech.com", ".daiech.com.", "localhost"]
 
 
 # Application definition
