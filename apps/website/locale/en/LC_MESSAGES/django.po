@@ -2,20 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-04 16:05-0500\n"
+"POT-Creation-Date: 2014-08-04 18:30-0500\n"
 "PO-Revision-Date: 2014-08-04 18:24-0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Translated-Using: django-rosetta 0.7.4\n"
 
 #: templates/website/base.html:10 templates/website/index.html:3
@@ -42,8 +42,8 @@ msgstr "ABOUT"
 
 #: templates/website/index.html:16
 msgid ""
-"Nos especializamos en el desarrollo de software colaborativo que facilite el"
-" trabajo en conjunto para mejorar el rendimiento de cualquier equipo de "
+"Nos especializamos en el desarrollo de software colaborativo que facilite el "
+"trabajo en conjunto para mejorar el rendimiento de cualquier equipo de "
 "trabajo"
 msgstr ""
 "We specialize in developing collaborative software to facilitate  work "
@@ -67,8 +67,8 @@ msgstr "Responsive web design"
 
 #: templates/website/index.html:33
 msgid ""
-"Ajuste a cualquier dispositivo para lograr un mayor alcance de visibilidad y"
-" una mejor experiencia de usuario"
+"Ajuste a cualquier dispositivo para lograr un mayor alcance de visibilidad y "
+"una mejor experiencia de usuario"
 msgstr ""
 "Adjust to any device for greater visibility and get a better user experience"
 
@@ -115,9 +115,9 @@ msgid ""
 "de campo. Ésta Permite supervisar las actividades de los empleados y llevar "
 "inventarios de insumos y equipos de la empresa."
 msgstr ""
-"Platform for piecework payment control and coordination of field activities."
-" This allows you to monitor the activities of employees and take inventory "
-"of supplies and equipment company."
+"Platform for piecework payment control and coordination of field activities. "
+"This allows you to monitor the activities of employees and take inventory of "
+"supplies and equipment company."
 
 #: templates/website/index.html:85
 msgid ""
@@ -126,6 +126,13 @@ msgid ""
 msgstr ""
 "Network social and commercial centered on product ratings in online stores "
 "and physical"
+
+#: templates/website/index.html:85
+msgid ""
+"Califiter es el resultado de la asociación entre <a href=\"https://twitter."
+"com/Daiech\">Daiech</a> y <a href=\"https://twitter.com/comerxion"
+"\">Comerxión</a>"
+msgstr ""
 
 #: templates/website/index.html:92 templates/website/top_bar.html:18
 msgid "VALORES"
@@ -177,9 +184,9 @@ msgstr "Passion"
 
 #: templates/website/index.html:115
 msgid ""
-"\"Trabajar en equipo divide el trabajo y multiplica los resultados\" "
-"Anónimo.<br>Nuestro objetivo es poder ser creativos, ágiles e innovadores al"
-" trabajar en conjunto"
+"\"Trabajar en equipo divide el trabajo y multiplica los resultados\" Anónimo."
+"<br>Nuestro objetivo es poder ser creativos, ágiles e innovadores al "
+"trabajar en conjunto"
 msgstr ""
 "\"Teamwork divides the work and multiply the results\" Anonymous. <br> Our "
 "goal is to be creatives, nimble and innovative to work together"
@@ -191,6 +198,14 @@ msgstr "ALLIES"
 #: templates/website/index.html:129 templates/website/top_bar.html:19
 msgid "CONTACTO"
 msgstr "CONTACT"
+
+#: templates/website/index.html:135
+msgid "Cra 31 # 15-87<br>Barrio, San Luis<br>Pereira, Colombia"
+msgstr ""
+
+#: templates/website/index.html:147
+msgid "Envíanos un correo para contactarnos"
+msgstr ""
 
 #: templates/website/pitch.html:9
 msgid "Pitch Actarium"
