@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from django.conf import global_settings
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -83,6 +84,8 @@ USE_TZ = True
 
 LOGIN_URL = "/admin"
 
+LOCALE_PATHS = tuple([os.sep.join([BASE_DIR,APP.replace('.',os.sep),'locale']) for APP in APPS])
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
@@ -113,4 +116,8 @@ ugettext = lambda s: s
 LANGUAGES = (
     ('es', ugettext('Spanish')),
     ('en', ugettext('English')),
+)
+
+MIDDLEWARE_CLASSES = global_settings.MIDDLEWARE_CLASSES + (
+    'django.middleware.locale.LocaleMiddleware',
 )
