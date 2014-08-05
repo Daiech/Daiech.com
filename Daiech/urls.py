@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     url(r'^update', 'apps.github.views.update'),
     url(r'^ads/(?P<id_ads>[-\w]+)$', 'apps.ads.views.home'),
 
+    url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('apps.website.urls')),
 )

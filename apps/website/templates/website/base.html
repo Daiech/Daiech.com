@@ -50,6 +50,22 @@
           <a href="https://plus.google.com/+Daiech" class="gp" target="_blank"></a>
           <a href="https://youtube.com/VideoDaiech" class="yt" target="_blank"></a>
         </div>
+        <div class="footer-text">
+            <form action="/i18n/setlang/" method="post" id="language-form">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.get_full_path }}" />
+                <input name="language" type="hidden" id="language-selected" />
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                <span class="language {{ language.code }}">
+                    <label>
+                        <button class="flag-icon {% if language.code == LANGUAGE_CODE %}language-selected{% endif %}" type="button" title="{{ language.name_local }} ({{ language.code }})" style="background: url('{{ STATIC_URL }}img/flags/{{ language.code }}.png')" data-language="{{ language.code }}"></button>
+                        {{ language.name_local }}
+                    </label>
+                </span>
+                {% endfor %}
+            </form>
+        </div>
     </footer>
 
   {% if not DEBUG %}

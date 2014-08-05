@@ -63,6 +63,13 @@ h1,h2,h3,h4,h5,h6{font-family: 'Montserrat', 'sans-serif;'}
 #contact a{color: white}
 #contact .contact-logo{float: left}
 #contact .contact-item{height: 70px}
+
+
+.footer-text{width: 60%;margin: 50px auto 0;text-align: center;font-family: "Helvetica Neue",Helvetica,sans-serif;}
+#language-form .flag-icon {width: 16px;height: 11px;border: 0;margin: 5px;}
+#language-form .language label{font-weight: normal;cursor: pointer;}
+#language-form .language label:hover{text-decoration: underline;}
+#language-form .es{margin-right: 10px;}
 @media screen and (max-width:1072px){
     #home .principal-text{width: 70%;}
     #about .container-fluid{width: 90%}

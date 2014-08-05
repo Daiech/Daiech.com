@@ -50,3 +50,4 @@ function goToByScroll(element, callback){
         'slow', callback);
 }
 $(document).ready(main);
+$("#language-form button").on("click", function (e){e.preventDefault();$("#language-selected").val($(this).attr("data-language"));$("#language-form").submit();})
