@@ -89,6 +89,11 @@ LOCALE_PATHS = tuple([os.sep.join([BASE_DIR,APP.replace('.',os.sep),'locale']) f
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
+try:
+    from local_settings import STATIC_ROOT
+except ImportError:
+    STATIC_ROOT = ""
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
