@@ -41,7 +41,7 @@
           {% include "website/top_bar.html" %}
         </nav>
     </div>
-    {% block content %}{% endblock %}
+    <div>{% block content %}{% endblock %}</div>
     <footer class="screen">
         <div class="daiech-logo"><a href="/"><img src="{% static 'img/daiech-logo.png' %}"></a></div>
         <div class="daiech-social">
@@ -76,7 +76,7 @@
     <script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/vendor/swig.min.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
-    {%block js%}{%endblock%}
+    {% block js %}{% endblock %}
     
   {% if not DEBUG %}
     <script>

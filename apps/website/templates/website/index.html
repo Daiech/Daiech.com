@@ -2,7 +2,7 @@
 {% load i18n %}
 {% block title %}{% trans 'Daiech - Desarrollo de software colaborativo' %}{% endblock %}
 
-{%block content %}
+{% block content %}
 <div class="index">
     <div id="home">
         <div class="principal-text">
@@ -131,19 +131,19 @@
             <div class="row">
                 <div class="contact-item col-sm-4 col-md-4">
                     <div class="box row">
-                        <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/address.png"></span>
+                        <span class="contact-logo"><img src="{% static 'img/landing/address.png' %}"></span>
                         <address>{% trans 'Cra 31 # 15-87<br>Barrio, San Luis<br>Pereira, Colombia' %}<br></address>
                     </div>
                 </div>
                 <div class="contact-item col-sm-4 col-md-4">
                     <div class="box row daiech-phone">
-                        <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/phone.png"></span>
+                        <span class="contact-logo"><img src="{% static 'img/landing/phone.png' %}"></span>
                         <p><!-- (036) 3216899 <br>  -->(+57) 316 664 3721</p>
                     </div>
                 </div>
                 <div class="contact-item col-sm-4 col-md-4">
                     <div class="box row daiech-mail">
-                        <span class="contact-logo"><img src="{{ STATIC_URL }}img/landing/email.png"></span>
+                        <span class="contact-logo"><img src="{% static 'img/landing/email.png' %}"></span>
                         <p class="daiech-mail-text"><a href="mailto:contacto@daiech.com" title="{% trans 'Envíanos un correo para contactarnos' %}">contacto@daiech.com</a></p>
                     </div>
                 </div>
@@ -151,14 +151,14 @@
         </div>
     </div>
 </div>
-{% endblock%}
+{% endblock %}
 
-{%block js%}
+{% block js %}
 <script type="text/javascript">
 </script>
-{%endblock%}
+{% endblock %}
 
-{%block style%}
+{% block style %}
 <link href='http://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab' rel='stylesheet' type='text/css'>
 <style type="text/css">
     #partners .partners-images div{display: inline-block;margin-right: 15px !important;}
@@ -169,4 +169,4 @@
     #partners #del{background-image: url("/static/img/partners/del.png");height: 83px;margin: auto;margin-top: 30px;width: 138px;background-position: 0 94px;}
     /*#partners #del:hover{background-position: 0px 0px;}*/
 </style>
-{%endblock%}
+{% endblock %}
