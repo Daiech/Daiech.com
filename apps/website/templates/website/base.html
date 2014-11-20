@@ -36,11 +36,11 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
   {% endif %}
-    <div class="container">
-        <nav id="daiech-navbar" class="navbar" role="navigation">
+    <header>
+        <nav id="daiech-navbar" class="navbar navbar-fixed-top" role="navigation">
           {% include "website/top_bar.html" %}
         </nav>
-    </div>
+    </header>
     <div>{% block content %}{% endblock %}</div>
     <footer class="screen">
         <div class="daiech-logo"><a href="/"><img src="{% static 'img/daiech-logo.png' %}"></a></div>

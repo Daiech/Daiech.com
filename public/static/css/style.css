@@ -3,7 +3,8 @@ h1,h2,h3,h4,h5,h6{font-family: 'Montserrat', 'sans-serif;'}
 .text-muted{font-family: 'Roboto Slab', 'sans-serif;'}
 .b{border: solid thin #dadada;}
 .navbar-toggle .icon-bar{background-color: #888;}
-#daiech-navbar{margin-top: 20px;}
+.navbar-header a img{margin: 5px 10px 0;}
+#daiech-navbar{padding: 10px 0;background-color: white;border-bottom: solid thin #ddd;margin: 0;}
 #daiech-menu *{color:#222;font-weight: bold;font-family: 'Montserrat', 'sans-serif;'}
 .daiech-logo{margin: 0 auto;width: 170px;}
 .daiech-social{height: 39px;margin:15px auto;margin-bottom: 0;width: 160px;}
@@ -14,7 +15,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Montserrat', 'sans-serif;'}
 .daiech-social a.yt{background-position: 42px 0;}
 
 
-.index{text-align: center;}
+.index{text-align: center;margin-top: 70px;}
 .screen{padding: 50px 0;}
 .description-text{font-size: 16px;margin: 0 auto;width: 50%;}
 #home{background-image: url("/static/img/landing/p.png");background-repeat: no-repeat;background-position: center;height: 530px;width: 100%}
