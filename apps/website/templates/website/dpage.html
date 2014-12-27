@@ -1,0 +1,28 @@
+{% extends "website/base.html" %}
+{% load i18n %}
+{% block title %}Daiech - Desarrollo de software colaborativo{% endblock %}
+
+{%block content %}
+	<div class="screen">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>{% trans 'D-page' %}</h1>
+				<p>{% trans 'Nos encanta el software libre, Por eso nos decidicmos por Django CMS, un potente manejador de contenidos para crear sitios web a su medida, ¿necesita una web adaptable a dispositivos móviles y en varios idiomas? está en el lugar correcto, contáctenos y encontraremos la mejor solución para sus necesidades.' %}</p>
+				<p><a class="btn btn-primary btn-lg" href="/#contact" role="button">{% trans 'Escríbamos' %}</a></p>
+			</div>
+		</div>
+	</div>
+{% endblock%}
+
+{%block js%}
+	<script type="text/javascript">
+	</script>
+{%endblock%}
+
+{%block style%}
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	    div.screen{font-family: Montserrat;padding:0; padding-top: 80px;}
+		/*footer{margin-top: 130px;}*/
+	</style>
+{%endblock%}

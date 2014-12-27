@@ -26,5 +26,9 @@ def pitch(request):
     return render(request, 'website/pitch.html', locals())
 
 
+def dpage(request):
+    return render(request, 'website/dpage.html', locals())
+
+
 def log_in(request):
     return render(request, 'website/login.html', {})
